@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +27,22 @@
       font-family: 'Poppins', sans-serif;
       background: #121212;
       color: #f0f0f0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Particles Background */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: url('https://i.ibb.co/8D7FBrM/girl-laptop-table.png') center/contain no-repeat, #121212;
+      background-size: 420px;
+      background-position: bottom right;
+      opacity: 0.9;
     }
 
     main {
@@ -37,6 +52,8 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+      position: relative;
+      z-index: 1;
     }
 
     /* ---------- Sidebar ---------- */
@@ -336,27 +353,28 @@
       background: linear-gradient(90deg, #dd2476, #ff512f);
     }
 
-    @media (max-width:768px){
+    @media (max-width:768px) {
       main {
         flex-direction: column;
       }
 
-      .contact, .skills-panel, .timeline {
+      .contact,
+      .skills-panel,
+      .timeline {
         flex-direction: column;
       }
     }
   </style>
 </head>
-
 <body>
-
+  <!-- Background Animation -->
+  <div id="particles-js"></div>
   <main>
-
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="https://th.bing.com/th/id/OIP.RvEsMBVvdwcxs6GOwJ0aZgHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="PUJITHA CHINAMUTEVI">
+          <img src="woman.jpg" alt="PUJITHA CHINAMUTEVI">
         </figure>
         <div class="info-content">
           <h1 class="name">PUJITHA CHINAMUTEVI</h1>
@@ -372,7 +390,7 @@
           </li>
           <li class="contact-item">
             <ion-icon name="person-outline"></ion-icon>
-            <span class="info-text">Roll.no: 24481A1251</span>
+            <span class="info-text">Roll.No: 24481A1251</span>
           </li>
           <li class="contact-item">
             <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -382,13 +400,26 @@
             <ion-icon name="location-outline"></ion-icon>
             <span class="info-text">Machilipatnam, Andhra Pradesh, India</span>
           </li>
+           
+  <div class="info-card">
+    
+  <div class="info-card">
+    <a href="https://www.linkedin.com/in/pujitha-chinamuthevi-446112368" target="_blank" style="display:flex; align-items:center; gap:8px; text-decoration:none; color:#e0e0e0;">
+      <ion-icon name="logo-linkedin" style="font-size:20px; color:#0a66c2;"></ion-icon>
+      <span class="info-text">LinkedIn</span>
+    </a>
+  </div>
+</div>
+         
+    
+  
+
         </ul>
       </div>
     </aside>
 
     <!-- Main Content -->
     <div class="main-content">
-
       <!-- About -->
       <article class="about">
         <h2>About Me</h2>
@@ -415,24 +446,24 @@
           <p>Participated in school projects and activities that improved problem-solving and teamwork skills.</p>
         </div>
       </section>
-       <!-- Certifications & Achievements Section -->
-<section class="timeline" style="background:#252536; padding:25px; border-radius:12px; box-shadow:0 4px 18px rgba(0,0,0,0.6); margin-bottom:30px;">
-  <div class="title-wrapper" style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
-    <div class="icon-box" style="font-size:24px; color:#06b6d4;">
-      <ion-icon name="trophy-outline"></ion-icon>
-    </div>
-    <h3 class="h3" style="color:#ffffff; font-size:22px; font-weight:600;">Certifications & Achievements</h3>
-  </div>
 
-  <ol class="timeline-list" style="list-style:none; padding:0; margin:0; display:grid; gap:18px;">
-    <li class="timeline-item" style="background:#2c2c42; padding:15px 18px; border-radius:10px; color:#e0e0e0; transition: transform 0.2s, background 0.3s;">
-      <p style="margin:0;">📌 Paper Presentation – SAINT Event | Topic: Robotics and Automation</p>
-    </li>
-    <li class="timeline-item" style="background:#2c2c42; padding:15px 18px; border-radius:10px; color:#e0e0e0; transition: transform 0.2s, background 0.3s;">
-      <p style="margin:0;">📌 Participated in the SAINT Hackathon with a project on Healthcare, developing a UI prototype for an AI-based system that enables patients to book online doctor appointments.</p>
-    </li>
-  </ol>
-</section>
+      <!-- Certifications & Achievements -->
+      <section class="timeline" style="background:#252536; padding:25px; border-radius:12px; box-shadow:0 4px 18px rgba(0,0,0,0.6); margin-bottom:30px;">
+        <div class="title-wrapper" style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+          <div class="icon-box" style="font-size:24px; color:#06b6d4;">
+            <ion-icon name="trophy-outline"></ion-icon>
+          </div>
+          <h3 class="h3" style="color:#ffffff; font-size:22px; font-weight:600;">Certifications & Achievements</h3>
+        </div>
+        <ol class="timeline-list" style="list-style:none; padding:0; margin:0; display:grid; gap:18px;">
+          <li class="timeline-item" style="background:#2c2c42; padding:15px 18px; border-radius:10px; color:#e0e0e0;">
+            📌 Paper Presentation – SAINT Event | Topic: Robotics and Automation
+          </li>
+          <li class="timeline-item" style="background:#2c2c42; padding:15px 18px; border-radius:10px; color:#e0e0e0;">
+            📌 Participated in the SAINT Hackathon with a project on Healthcare, developing a UI prototype for an AI-based system that enables patients to book online doctor appointments.
+          </li>
+        </ol>
+      </section>
 
       <!-- Skills -->
       <section class="skills-panel">
@@ -446,9 +477,7 @@
                 <span class="skill-name">C Language</span>
                 <span class="skill-percent">60%</span>
               </div>
-              <div class="progress-wrap">
-                <div class="progress" style="width:60%"></div>
-              </div>
+              <div class="progress-wrap"><div class="progress" style="width:60%"></div></div>
             </div>
           </li>
           <li class="skill-item">
@@ -456,11 +485,9 @@
             <div class="skill-info">
               <div class="skill-top">
                 <span class="skill-name">Python</span>
-                <span class="skill-percent">30%</span>
+                <span class="skill-percent">35%</span>
               </div>
-              <div class="progress-wrap">
-                <div class="progress" style="width:30%"></div>
-              </div>
+              <div class="progress-wrap"><div class="progress" style="width:30%"></div></div>
             </div>
           </li>
           <li class="skill-item">
@@ -470,9 +497,7 @@
                 <span class="skill-name">Java</span>
                 <span class="skill-percent">48%</span>
               </div>
-              <div class="progress-wrap">
-                <div class="progress" style="width:48%"></div>
-              </div>
+              <div class="progress-wrap"><div class="progress" style="width:48%"></div></div>
             </div>
           </li>
           <li class="skill-item">
@@ -482,9 +507,7 @@
                 <span class="skill-name">HTML</span>
                 <span class="skill-percent">40%</span>
               </div>
-              <div class="progress-wrap">
-                <div class="progress" style="width:40%"></div>
-              </div>
+              <div class="progress-wrap"><div class="progress" style="width:40%"></div></div>
             </div>
           </li>
           <li class="skill-item">
@@ -494,51 +517,72 @@
                 <span class="skill-name">SQL</span>
                 <span class="skill-percent">10%</span>
               </div>
-              <div class="progress-wrap">
-                <div class="progress" style="width:10%"></div>
-              </div>
+              <div class="progress-wrap"><div class="progress" style="width:10%"></div></div>
             </div>
           </li>
         </ul>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Contact -->
       <section class="contact">
         <div class="contact-header">
           <h2>Get in Touch</h2>
         </div>
-
         <div class="contact-info">
           <div class="info-card">
-            <ion-icon name="call" class="info-icon"></ion-icon>
+            <ion-icon name="call"></ion-icon>
             <span class="info-text">+91 9346736081</span>
           </div>
           <div class="info-card">
-            <ion-icon name="mail" class="info-icon"></ion-icon>
+            <ion-icon name="mail"></ion-icon>
             <span class="info-text">pujithachinamuthevi567@gmail.com</span>
           </div>
           <div class="info-card">
-            <ion-icon name="location" class="info-icon"></ion-icon>
+            <ion-icon name="location"></ion-icon>
             <span class="info-text">Machilipatnam, Andhra Pradesh, India</span>
           </div>
         </div>
-
         <div class="contact-form">
           <h3 class="form-title">Send a Message</h3>
           <form action="#" class="form" data-form>
-            <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
-            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input rows="5"></textarea>
-            <button class="form-btn" type="submit" data-form-btn>
+            <input type="text" name="fullname" class="form-input" placeholder="Full Name" required>
+            <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+            <textarea name="message" class="form-input" placeholder="Your Message" required rows="5"></textarea>
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send</span>
             </button>
           </form>
         </div>
       </section>
-
-    </div> <!-- end main-content -->
-
+    </div>
   </main>
+
+  <!-- Particles.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.4, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#06b6d4", "opacity": 0.3, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100, "duration": 0.4 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
